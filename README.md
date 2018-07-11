@@ -27,11 +27,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 # Personal notes
-* The angular cli is a globally installed npm package on my machine.
-* $ ng new {name} $ scaffolds a new Angular project in a directory called {name} that contains:  
- * folders: e2e, node_modules, src
- * files: .angular-cli.json, karma.conf.js, package-lock.json, package.json, protractor.conf.js, README.md, tsconfig.json, and tslint.json
-* The src folder initially contains:
- * folders: app, assets, environments
- * files: favicon.ico, index.html, main.ts, polyfill.ts, styles.css, test.ts, tsconfig.app.json, tsconfig.spec.json, typings.d.ts
-* $ ng serve $ builds, the app, starts the dev server, and watches files
+- The angular cli is a globally installed npm package on my machine.
+- $ ng new {name} $ scaffolds a new Angular project in a directory called {name} that contains:  
+  - folders: e2e, node_modules, src
+  - files: .angular-cli.json, karma.conf.js, package-lock.json, package.json, protractor.conf.js, README.md, tsconfig.json, and tslint.json
+- The src folder initially contains:
+  - folders: app, assets, environments
+  - files: favicon.ico, index.html, main.ts, polyfill.ts, styles.css, test.ts, tsconfig.app.json, tsconfig.spec.json, typings.d.ts
+- $ ng serve $ builds, the app, starts the dev server, and watches files
