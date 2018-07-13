@@ -1,0 +1,38 @@
+#index_flex 
+{
+    max-width: 900px;
+}
+
+.flex 
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex--narrow 
+{
+    justify-content: center;
+}
+
+.flex__item 
+{
+    font-size: 1.5rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    max-width: 260px;
+}
+
+.flex__item h1
+{
+    text-align: center;
+}
+
+.flex__item p
+{
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
