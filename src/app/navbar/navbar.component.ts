@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SomeClass } from '../someclass';
 
+/* The navbar should appear on every page. Therefore, every component should include this component? */
+
 /* This decorator function specifies the Angualr metadata for THIS component. The CLI added
 the selector, templateUrl, and styleUrl metadata properties for me.
  */

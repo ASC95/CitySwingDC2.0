@@ -1,20 +1,7 @@
+<!-- This is the interpolation syntax. The source of the interpolation is app.component.ts  -->
+<h1>{{title}}</h1> 
 <!-- This is this component's template. -->
-
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width initial-scale=1'>
-    <title>CitySwing DC</title>
-    <!--script(src="https://use.fontawesome.com/168367c54f.js")-->
-    <!--link(rel='stylesheet', href='/stylesheets/main.css')-->
-  </head>
-  <body>
-    <app-navbar></app-navbar>
-    <!-- This is the interpolation syntax. The source of the interpolation is app.component.ts  -->
-    <h1>{{title}}</h1> 
-    <!--block content-->
-    <!--include includes/footer-->
-    <!--script(src='javascripts/all.js')-->
-  </body>
-</html>
+<app-navbar></app-navbar>
+<!-- <router-outlet> tells the router where to display the view that has been navigated to. This is a router directive that
+    became available to AppComponent because 1) AppModule imports AppRoutingModule and 2) AppRoutingModule exported RouterModule -->
+<!--<router-outlet></router-outlet>-->

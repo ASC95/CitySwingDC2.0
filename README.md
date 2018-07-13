@@ -37,3 +37,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - files: favicon.ico, index.html, main.ts, polyfill.ts, styles.css, test.ts, tsconfig.app.json, tsconfig.spec.json, typings.d.ts
 - $ ng serve $ builds the app, starts the dev server, and watches files
 - $ ng generate component {name} $ creates a new component folder in src/app called {name}. It also adds an import statement to app.module.ts for the component
+
+Is my website an SPA? I don't know.
+TODO: provide basic styling to the navbar

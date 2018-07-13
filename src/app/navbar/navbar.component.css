@@ -1,0 +1,108 @@
+/* https://medium.freecodecamp.org/everything-you-need-to-know-about-css-variables-c74d922ea855 */
+/* In order to use a CSS variable in the entire stylesheet, it must be globally scoped. If it is not globally scoped, the variable
+is only scoped to its declared block. Using the :root selector to globally scope variables. */
+:root
+{
+    /* This is a CSS variable. It can only be used as a property (i.e. on the right hand side of an assigment statment).
+    It cannot be used for math. I need calc() for that. */
+    --nav-height: 60px;
+    --primary-color: blue;
+}
+/* Basically nothing works and I should start over :( */
+/*.body[data-display='hidden'] {
+    overflow: hidden;
+}*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--primary_color);
+    z-index: 1;
+}
+.nav__header 
+{
+    /* This is how to use a CSS variable */
+    height: var(--nav-height);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*.nav__header .fa-bars
+{
+    font-size: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+}*/
+.nav__header h1
+{
+    padding: .5rem 1rem .5rem 1rem;
+    margin: 0;
+}
+.nav__menu {
+    background-color: red;
+    height: calc(100vh - var(--nav_height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__menu ul
+{
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 5rem;
+}
+.nav__menu li
+{
+    list-style: none;
+}
+/*.nav__menu[data-display='hidden'] 
+{
+    display: none;
+}*/
+/* This is a mobile-first design, so the desktop styling is contained in a media condition. */
+@media screen and (min-width: 960px) {
+    /*.body[data-display='hidden'] 
+    {
+      overflow: visible;
+    }*/
+    /*nav 
+    {
+      display: flex;
+      justify-content: space-between;
+    }*/
+    /*.nav__header 
+    { 
+    }*/
+    /*.nav__header > h1
+    {
+        white-space: nowrap;
+    }
+    .nav__header > .fa-bars
+    {
+        display: none;
+    } 
+    .nav__menu {
+      height: auto;
+    }
+    .nav__menu ul
+    {
+        padding: 0 1rem;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 0;
+        white-space: nowrap;
+    }
+    .nav__menu li
+    {
+        list-style: none;
+        margin: 0 1rem 0 0;
+        display: inline-block; 
+    }
+    .nav__menu li:last-child
+    {
+        margin: 0;
+    }*/
+    /*.nav__menu[data-display='hidden'] {
+      display: flex;
+    }*/
+}
