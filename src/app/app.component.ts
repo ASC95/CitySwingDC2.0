@@ -1,3 +1,4 @@
+/* This file represents an Angular component. A component is spread across three files: .ts, .html. and .css. */
 import { Component } from '@angular/core';
 //import { Title } from '@angular/platform-browser';
 
@@ -21,8 +22,8 @@ export class AppComponent {
   //public constructor() {}
 
   /* A service always needs to be injected into the constructor of its component */
-  public constructor(private whatever: Title ) { 
-    this.whatever.setTitle("CitySwingDC");
-  }
+  //public constructor(private whatever: Title ) { 
+  //  this.whatever.setTitle("CitySwingDC");
+  //}
 
 }
